@@ -1,0 +1,8 @@
+UserName: rizwan | Role: undefinedUserName: rizwan | Role: undefinedUserName: rizwan | Role: undefined
+UserName: rizwan | Role: undefined
+UserName: rizwan | Role: undefined
+UserName: ayan | Role: undefined
+UserName: ayan | Role: admin
+UserName: ayan | Role: admin
+UserName: amaan | Role: regular
+UserName: ankit | Role: admin

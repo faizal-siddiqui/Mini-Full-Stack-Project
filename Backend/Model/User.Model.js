@@ -9,7 +9,7 @@ const userSchema = mongoose.Schema({
   location: { type: String, required: false },
 });
 
-const userModel = mongoose.model("user", userSchema);
+const userModel = mongoose.model("user", userSchema); // capital letter
 
 module.exports = {
   userModel,

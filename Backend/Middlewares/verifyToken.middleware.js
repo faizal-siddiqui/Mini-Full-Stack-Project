@@ -10,7 +10,7 @@ const verifyToken = (req, res, next) => {
         req.body.userId = decoded.userId;
         next();
       } else {
-        res.send({ msg: "Session Expired Login Again" });
+        res.statusCode(500).send({ msg: "Session Expired Login Again" });
       }
     });
   } else {

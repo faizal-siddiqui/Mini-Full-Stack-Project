@@ -32,13 +32,16 @@ const SignUp = (props: Props) => {
     e.preventDefault();
     try {
       if (cred.password === password) {
-        const res = await fetch(`http://localhost:5000/users/register`, {
-          method: "POST",
-          body: JSON.stringify(cred),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
+        const res = await fetch(
+          `https://sore-yak-school-uniform.cyclic.app/users/register`,
+          {
+            method: "POST",
+            body: JSON.stringify(cred),
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
         const data = await res.json();
         alert("Your account is created");
         navigate("/login");

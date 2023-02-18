@@ -1,6 +1,7 @@
 const fs = require("fs");
 const { userModel } = require("../Model/User.Model");
 
+// remove append while deployment
 async function userLogger(req, res, next) {
   const { username, password, userId, role } = req.body;
   fs.appendFileSync(

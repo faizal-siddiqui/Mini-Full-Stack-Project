@@ -28,13 +28,16 @@ const About = (props: Props) => {
       return;
     }
     try {
-      const res = await fetch(`http://localhost:5000/projects/`, {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `${token}`,
-        },
-      });
+      const res = await fetch(
+        `https://sore-yak-school-uniform.cyclic.app/projects/`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `${token}`,
+          },
+        }
+      );
       const data = await res.json();
       setData(data);
     } catch (err) {

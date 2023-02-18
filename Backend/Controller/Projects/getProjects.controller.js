@@ -5,7 +5,7 @@ const getProjects = async (req, res) => {
     const data = await ProjectModel.find();
     res.send(data);
   } catch (err) {
-    res.statusCode(500).send({ err: err.message });
+    res.send({ err: err.message });
   }
 };
 

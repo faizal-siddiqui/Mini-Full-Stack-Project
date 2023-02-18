@@ -19,17 +19,25 @@ const Login = (props: Props) => {
   const loginAccount = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const res = await fetch(`http://localhost:5000/users/login`, {
-        method: "POST",
-        body: JSON.stringify(cred),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const res = await fetch(
+        `https://sore-yak-school-uniform.cyclic.app/users/login`,
+        {
+          method: "POST",
+          body: JSON.stringify(cred),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
       const data = await res.json();
-      alert("Login Successful");
-      document.cookie = `token=${data.token}`;
-      navigate("/");
+      if (data.token) {
+        alert("Login Successful");
+        console.log(data.token);
+        document.cookie = `token=${data.token}`;
+        navigate("/");
+      } else {
+        alert(data.err);
+      }
     } catch (err) {
       alert(err);
     }

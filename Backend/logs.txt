@@ -6,3 +6,11 @@ UserName: ayan | Role: admin
 UserName: ayan | Role: admin
 UserName: amaan | Role: regular
 UserName: ankit | Role: admin
+UserName: faiz | Role: admin
+UserName: faiz | Role: admin
+UserName: faiz | Role: admin
+UserName: faiz | Role: admin
+UserName: faiz | Role: admin
+UserName: faiz | Role: admin
+UserName: faiz | Role: admin
+UserName: faiz | Role: admin
